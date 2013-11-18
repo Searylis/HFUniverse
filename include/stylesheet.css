@@ -1,0 +1,180 @@
+body {
+	background-color: #000000;
+	background-image: url(http://webuser.hs-furtwangen.de/~creuzbur/GIS/include/background.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+	margin: 0 auto;
+	/*margin-top: 20px;*/
+	margin-bottom: 20px;
+	border: 0px dashed #a0a0a0;
+	height: 600px;
+	overflow: hidden;
+	width: 700px;
+}
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.link, .linkActive {
+cursor: pointer;
+	float: left;
+	padding: 10px;
+	
+}
+.link a {
+cursor: pointer;
+	letter-spacing: 4px;
+	color: white;
+	font-size: 12px;
+}
+.link:hover{
+cursor: pointer;
+}
+a:hover {
+cursor: pointer;
+	color: transparent;
+	text-decoration: none
+}
+
+.Button{
+height: 25px;
+padding: 2px 2px 2px 2px;
+background-color: rgba(0,0,0,0.5);
+color:#fff;
+border:1px solid rgba(255,255,255,0.05);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+
+}
+.Button:hover{
+cursor: pointer;
+}
+
+#menu {
+	height: 15px;
+	width: 750px;
+	margin-bottom: 10px;
+}
+#submenu{
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	width: 600px;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	color: #a0a0a0;
+	font-size: 25px;
+	font-style: italic;
+	height: 40px;
+	margin: 20px 12px 12px 35px;
+	width: 550px;
+}
+.text {
+
+	color: #FFFFFF;
+	line-height: 150%;
+	margin-right: 10px;
+	margin-left: 20px;
+	width: 550px;
+}
+td {
+width: 100px;
+}
+table {
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px;
+	color: #FFFFFF;
+	font-size: 11px;
+}
+
+#helpTitle{
+font-size: 12px;
+font-style: italic;
+}
+
+#content {
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	height: absolute;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	position: absolute;
+	width: 600px;
+}
+#main {
+	margin-top: 50px;
+	margin-left: 15px;
+}
+
+#help{
+color: rgba(255,255,255,0.5);
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: rgba(0,0,0,0.6);
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+position: fixed;
+margin-top: -486px;
+margin-left: 36px;
+width: 250px;
+height: absolute;
+}
+
+
+#button{
+position: absolute;
+margin-top: -2.8%;
+margin-left: 41%;
+}
+
+li{
+	text-indent:10px;
+}
+
+hr{
+	color: #FFFFFF;
+}
+
+tr{
+height: 22px;
+}
+
+th{
+	width: absolute;
+	text-align: left;
+}
+
+.resourceInput
+{
+	border: none;
+	color: #ffffff;
+	background: none;
+	text-align: center;
+    width: 35px;
+}
+
+#contents{
+margin-bottom: 10px;
+}
+
+.shipcenterHeader{
+text-align: center;
+}
+
+.resourceBox{
+	background-color: rgba(0,0,0,0.5);
+	border:1px solid rgba(255,255,255,0.9);
+	color: white;
+}

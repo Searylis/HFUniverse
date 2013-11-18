@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>HFUniverse - Jana Lipowsky & Astrid Creuzburg</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="HFUniverse - Hochschule Furtwangen University.">
+		<meta name="keywords" content="HFUniverse, HFU, Hochschule Furtwangen University, universe, galaxy, jana lipowsky, astrid creuzburg, gis, Grundlagen Interaktiver Systeme">
+		<link rel="stylesheet" type="text/css" href="http://webuser.hs-furtwangen.de/~creuzbur/GIS/client/include/stylesheet.css" media="screen">
+		<link type="text/css" href="css/ui-darkness/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="clientScript.js"></script>
+		<script type="text/javascript" src="jQuery.js"></script>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	</head>
+	<body>
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+		getInfo();
+		fillHTML("Main");
+		
+		$("#mainpage").click(function(){
+			fillHTML("Main");
+		});
+		
+		$("#shipcenter").click(function(){
+			fillHTML("Shipcenter");
+		});
+		
+		$("#newShipBuild").click(function(){
+			fillHTML("Schiffsbau");
+		});
+		
+		$("#universe").click(function(){
+			fillHTML("Universe");
+		});
+		
+		$("#alliances").click(function(){
+			fillHTML("Alliances");
+		});
+	
+});
+
+		$(function()
+		 {
+			$( "#dialog-form" ).dialog({
+				autoOpen: false,
+				height: 150,
+				width: 175,
+				modal: true,
+				buttons: 
+				{
+					"Absenden": 
+						function(){
+							var selectedOption = document.querySelectorAll("option");
+							var id;
+							for(var i = 0; i < selectedOption.length; i++)
+							{
+								if(selectedOption[i].selected)
+								{
+									id = selectedOption[i].attributes.value.value;
+									break;
+								}
+							}
+							giveShipFinal(id);
+							$( this ).dialog( "close" );
+						}
+				}
+			});
+		 });
+	<!-- $(document).ready(function(){getInfo(); fillHTML("Main");}); -->
+	</script>
+	
+		<div id="dialog-form" title="Freund auswählen">
+			<center><span>Wähle einen Freund:</span><br><br>
+			<select name="Freundes" id="friendSelect"><option value="please" selected="selected">Freund wählen</option> </select></center>
+		</div>
+	
+		<div id="wrapper">
+			<!--Hauptframe -->
+			<div id="main">
+				<!--Inhalt -->
+				<div id="menu">
+					<div class="link">
+						<a id="mainpage">Main</a>
+					</div>
+					<div class="link">
+						<a id="shipcenter">Shipcenter</a>
+					</div>
+					<div class="link">
+						<a id="universe">Universe</a>
+					</div>
+					<div class="link">
+						<a id="alliances">Alliances</a>
+					</div>
+					</div>
+					<div id="button"><form method="post" action="logout.php">
+						<input class="Button" type="submit" value="Logout">
+					</form></div>
+					
+					
+				<div id="submenu">
+				</div>
+				
+					<div id="content">
+						
+					</div>
+						<!-- end text -->
+					
+				</div>
+					<!-- end content -->
+					
+					
+					
+				</div>
+				<!-- end main -->
+				
+			</div>
+			<!-- end wrapper -->
+			<div id="help"><span id="helpTitle"><b>Helpcenter</b></span><br><br>
+					<span id="helpText"></span>
+					</div>
+	<script type="text/javascript">
+		
+	</script>
+	</body>
+</html>
